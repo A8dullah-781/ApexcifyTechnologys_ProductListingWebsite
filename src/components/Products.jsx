@@ -34,7 +34,7 @@ const Products = () => {
 
       <div
         id="products"
-        className="bg-[#EAEFEE] mt-[14vh] justify-center px-5 flex flex-col items-center min-h-[80vh] w-[97vw] mb-4 rounded-4xl mx-4"
+        className="bg-[#EAEFEE] mt-[16vh] justify-center px-5 flex flex-col items-center min-h-[80vh] w-[97vw] mb-4 rounded-4xl mx-4"
       >
         <div className="text-5xl p-8 font-bold uppercase">
           Gear Up Your Life
