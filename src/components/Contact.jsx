@@ -3,14 +3,17 @@ import Navtwo from '../components/Navtwo'
 
 const Contact = () => {
   return (
-    <div className='flex bg-[#EAEFEE] min-h-[82vh] w-[97vw] mt-[15vh] m-4 rounded-4xl'>
+    <div>
         <Navtwo/>
-       <div className='w-[25%] h-full flex justify-center pt-18 pl-15 items-center hidden lg:flex'>
+        <div className='flex bg-[#EAEFEE]  w-[97vw] justify-center items-center    mx-auto my-2 rounded-4xl'>
+      {/* <Navtwo/> */}
+       
+
+
+<div className=" px-15 lg:h-[80vh]  mx-auto flex flex-col md:flex-row md:gap-15 gap-5 items-center justify-start py-16">
+    <div className=' h-full md:flex  hidden justify-center pt-18  items-center '>
   <img src="/images/contact.PNG" className='h-[60vh] rounded-4xl' alt="" />
 </div>
-
-
-<div className="lg:w-[60%] px-15 lg:px-0 h-full mx-auto flex flex-col md:flex-row gap-15 items-center justify-start py-16">
   {/* Left side - Form */}
   <div className="flex-1">
     <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
@@ -77,7 +80,7 @@ const Contact = () => {
   </div>
 
   {/* Right side - Contact Info */}
-  <div className="flex-1 space-y-6 -mt-5 md:mt-0">
+  <div className="flex-1 space-y-6 mt-8 md:mt-0">
     <h2 className="text-3xl font-bold mb-4">Contact Info</h2>
     <p className="text-black">
       <span className="font-semibold">Phone:</span> 
@@ -89,15 +92,16 @@ const Contact = () => {
     </p>
     <p className="text-black">
       <span className="font-semibold">Address:</span>
-      <div> 123 Main Street, New York, NY 10001, USA</div>
+      <div>NY 212 Main BLVD 8733 London</div>
     </p>
-    <p className="text-black font-medium">
+    <p className="text-black">
       Feel free to reach out for any questions, collaborations, or support inquiries.
     </p>
   </div>
 </div>
 
 
+    </div>
     </div>
   )
 }

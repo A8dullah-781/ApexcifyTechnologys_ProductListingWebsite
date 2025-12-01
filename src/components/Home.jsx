@@ -5,10 +5,11 @@ import Navtwo from "./Navtwo";
 
 const Home = () => {
   return (
-   <div className="flex justify-center  items-center">
+   <div className="flex-col justify-center  items-center">
     <Navtwo/>
-     <div id="home" className="lg:mt-[14vh] mt-[12vh]">
-      <div className="bg-[#EAEFEE] justify-between lg:px-15   flex flex-col lg:flex-row items-center  w-[97vw] h-[95%] lg:h-[83vh] rounded-4xl   mx-auto my-2">
+     <div id="home" className="">
+      <div className="bg-[#EAEFEE] justify-between lg:px-15   flex flex-col lg:flex-row items-center  w-[97vw] 
+      h-screen lg:h-[83vh] rounded-4xl   mx-auto my-2">
         <div className="left flex  lg:justify-start justify-center  items-start lg:items-center h-full lg:w-1/3">
           <div className="one flex lg:gap-10 gap-2 flex-col justify-start items-center lg:items-start">
             <div className="heading text-4xl pt-10 lg:pt-0 lg:text-6xl  font-black">
@@ -31,9 +32,9 @@ const Home = () => {
 
             
            <Link to="/products">
-            <button className="bg-[#DCFF75] my-3 hover:scale-105 group flex  transition-all items-center  font-medium lg:w-[18vw] w-[55vw] h-[8vh] rounded-4xl">
+            <button className="bg-[#DCFF75] my-3 hover:scale-105 group flex justify-evenly transition-all items-center  font-medium lg:w-[20vw] w-[58vw] py-5 rounded-4xl">
               <div className="px-5">View all products</div>
-              <div className= " ml-3 bg-black group-hover:p-3 transition-all rounded-full p-2">
+              <div className= " bg-black group-hover:p-3 transition-all rounded-full p-2">
                 <MdArrowOutward  className="text-white w-4 h-4" />
               </div>
             </button>

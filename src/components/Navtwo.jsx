@@ -9,8 +9,8 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 w-full flex justify-center z-50">
-      <div className="bg-[#EAEFEE] flex justify-between items-center px-6 py-3 w-[97vw] rounded-4xl mt-2">
+    <div className="w-full flex justify-center z-50 relative">
+      <div className="bg-[#EAEFEE] flex justify-between items-center px-6 py-3 w-[97vw] rounded-4xl mt-2 relative z-50">
         {/* Logo */}
         <div className="flex items-center gap-1">
           <RiHomeSmileFill className="w-10 h-10" />
@@ -51,13 +51,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu with Smooth Slide */}
+      {/* Mobile Menu */}
       <div
-        className={`absolute top-full left-0 w-full overflow-hidden transition-all duration-300 ease-in-out md:hidden ${
-          menuOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`absolute top-full left-0 w-full overflow-hidden transition-all duration-300 ease-in-out md:hidden z-40`}
+        style={{ maxHeight: menuOpen ? "240px" : "0" }}
       >
-        <div className="flex flex-col items-center bg-[#EAEFEE] rounded-4xl mx-2 py-4 gap-4">
+        <div className="flex flex-col items-center bg-[#EAEFEE] rounded-b-4xl mx-2 py-4 gap-4">
           <Link to="/" className="text-black font-semibold" onClick={() => setMenuOpen(false)}>
             Home
           </Link>
