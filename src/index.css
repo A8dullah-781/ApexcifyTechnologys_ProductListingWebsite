@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+body {
+  background-color: #c2c7c6;
+  font-family: "Raleway", sans-serif;
+}
+
+.hollow {
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+}
