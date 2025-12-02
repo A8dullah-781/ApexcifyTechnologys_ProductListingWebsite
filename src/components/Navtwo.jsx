@@ -56,7 +56,7 @@ const Navbar = () => {
         className={`absolute top-full left-0 w-full overflow-hidden transition-all duration-300 ease-in-out md:hidden z-40`}
         style={{ maxHeight: menuOpen ? "240px" : "0" }}
       >
-        <div className="flex flex-col items-center bg-[#EAEFEE] rounded-b-4xl mx-2 py-4 gap-4">
+        <div className="flex flex-col items-center bg-[#EAEFEE] rounded-4xl mx-2 py-4 gap-4">
           <Link to="/" className="text-black font-semibold" onClick={() => setMenuOpen(false)}>
             Home
           </Link>

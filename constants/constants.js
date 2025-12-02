@@ -18,7 +18,7 @@ const products = [
   },
   {
     id: 14,
-    name: "Zenith Headphones Black",
+    name: "Zenith Black",
     category: "headphones",
     price: 5800,
     description: "High-quality over-ear headphones with deep bass",
@@ -44,7 +44,7 @@ const products = [
   },
   {
     id: 15,
-    name: "Zenith Headphones Beige",
+    name: "Zenith Beige",
     category: "headphones",
     price: 5400,
     description: "Comfortable headphones with balanced sound",
@@ -70,7 +70,7 @@ const products = [
   },
   {
     id: 16,
-    name: "Zenith Headphones Chocolate",
+    name: "Zenith Chocolate",
     category: "headphones",
     price: 5600,
     description: "Stylish headphones with premium audio",
@@ -96,7 +96,7 @@ const products = [
   },
   {
     id: 17,
-    name: "Zenith Headphones Carbon",
+    name: "Zenith Carbon",
     category: "headphones",
     price: 5900,
     description: "Durable headphones with clear treble",
@@ -122,7 +122,7 @@ const products = [
   },
   {
     id: 18,
-    name: "Zenith Headphones Midnight",
+    name: "Zenith Midnight",
     category: "headphones",
     price: 6000,
     description: "Sleek headphones with immersive sound",
@@ -148,7 +148,7 @@ const products = [
   },
   {
     id: 19,
-    name: "Zenith Headphones Blue",
+    name: "Zenith Blue",
     category: "headphones",
     price: 5700,
     description: "Comfortable headphones with rich bass",

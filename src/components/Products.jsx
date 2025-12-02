@@ -34,13 +34,13 @@ const Products = () => {
 
       <div
         id="products"
-        className="bg-[#EAEFEE] mt-[16vh] justify-center px-5 flex flex-col items-center min-h-[80vh] w-[97vw] mb-4 rounded-4xl mx-4"
+        className="bg-[#EAEFEE]  justify-center md:px-5 flex flex-col items-center min-h-[80vh] w-[97vw] mb-4 rounded-4xl mx-auto my-2"
       >
-        <div className="text-5xl p-8 font-bold uppercase">
+        <div className="md:text-5xl text-3xl md:p-8 py-6 px-3 font-bold uppercase">
           Gear Up Your Life
         </div>
 
-        <div className="flex">
+        <div className="">
           <div className="flex justify-center items-center flex-wrap">
             {filterProducts.map((product) => (
               <Card
@@ -64,10 +64,10 @@ const Products = () => {
       {isModalOpen && selectedProduct && (
         <div 
         
-        className="fixed inset-0 bg-black/35 bg-opacity-50 flex justify-center items-center z-50">
+        className="fixed md:top-[-35%] lg:top-0 inset-0 bg-black/55 bg-opacity-50 flex justify-center items-center z-50">
           {/* LEFT ARROW */}
           <button
-            className="absolute left-10 text-white text-4xl"
+            className="absolute z-50 left-10 top-[40%] text-4xl md:text-white md:text-6xl"
             onClick={() => {
               const newIndex =
                 (selectedIndex - 1 + filterProducts.length) %
@@ -107,7 +107,7 @@ const Products = () => {
 
           {/* RIGHT ARROW */}
           <button
-            className="absolute right-10 text-white text-4xl"
+            className="absolute right-10 top-[40%] text-4xl  md:text-white md:text-6xl"
             onClick={() => {
               const newIndex = (selectedIndex + 1) % filterProducts.length;
               setSelectedIndex(newIndex);

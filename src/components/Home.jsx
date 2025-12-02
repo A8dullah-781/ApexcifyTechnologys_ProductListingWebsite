@@ -17,7 +17,7 @@ const Home = () => {
               Inspiring
             </div>
             <div className="two  lg:hidden  justify-center flex items-center h-full lg:w-1/3">
-        <img src="/images/home.png" className="h-[30vh]" alt="" />
+        <img src="/images/home.png" className="h-[40vh]" alt="" />
         </div>
             <div className="detail flex justify-center items-center gap-5">
               <div className="text-8xl hollow">01</div>

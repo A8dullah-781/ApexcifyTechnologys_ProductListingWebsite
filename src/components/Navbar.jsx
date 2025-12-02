@@ -10,16 +10,16 @@ const Navbar = ({ onSearch }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="fixed top-0 left-0 w-full flex justify-center z-50">
-      <div className="bg-[#EAEFEE] flex justify-between items-center px-6 py-3 w-[97vw] rounded-4xl mt-2">
+    <div className="w-full flex relative justify-center z-50">
+      <div className="bg-[#EAEFEE]  flex justify-between items-center md:px-6 px-4 py-3 w-[97vw] rounded-4xl mt-2">
         {/* Logo + Search */}
-        <div className="flex items-center gap-5">
+        <div className="flex items-center md:gap-5">
           <div className="flex items-center gap-1">
             <RiHomeSmileFill className="w-10 h-10" />
-            <div className="font-raleway font-bold text-3xl">ShopHere</div>
+            <div className="font-raleway font-bold hidden lg:block text-3xl">ShopHere</div>
           </div>
 
-          <div className="relative hidden md:block">
+          <div className="relative ">
             <input
               id="search-input"
               onChange={(e) => onSearch(e.target.value)}
@@ -31,7 +31,7 @@ const Navbar = ({ onSearch }) => {
               }}
               placeholder="Search Products..."
               type="text"
-              className="bg-[#FFFFFF] w-[25vw] pl-12 placeholder:text-sm transition-all p-3 rounded-4xl"
+              className="bg-[#FFFFFF] md:w-[25vw] w-[50vw] pl-12 placeholder:text-sm transition-all p-3 rounded-4xl"
             />
             <div className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black rounded-full p-2">
               <FaSearch className="text-white w-4 h-4" />
@@ -59,7 +59,7 @@ const Navbar = ({ onSearch }) => {
         </div>
 
         {/* Mobile Burger + Cart */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden flex rounded-4xl items-center">
           <div className="bg-black text-white rounded-full p-2.5 mr-2">
             <GrCart className="w-6 h-6" />
           </div>
@@ -75,7 +75,7 @@ const Navbar = ({ onSearch }) => {
           menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="flex flex-col items-center bg-[#EAEFEE] py-4 gap-4">
+        <div className="flex flex-col items-center rounded-4xl bg-[#EAEFEE] py-4 gap-4">
           <Link to="/" className="text-black font-semibold" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/products" className="text-black font-semibold" onClick={() => setMenuOpen(false)}>Products</Link>
           <Link to="/contact" className="text-black font-semibold" onClick={() => setMenuOpen(false)}>Contact</Link>
